@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>  
+
+	<script type="text/javascript">
+	window.onload = function () {
+		var chart = new CanvasJS.Chart("chartContainer",
+		{
+            
+			title:{
+				text: "Programming Languages"
+			},
+                        animationEnabled: true,
+			theme: "theme2",
+			data: [
+			{        
+				type: "doughnut",
+				indexLabelFontFamily: "Garamond",       
+				indexLabelFontSize: 20,
+				startAngle:0,
+				indexLabelFontColor: "dimgrey",       
+				indexLabelLineColor: "darkgrey", 
+				toolTipContent: "{y} %", 					
+
+				dataPoints: [
+				{  y: 67.34, indexLabel: "Java" },
+				{  y: 28.6, indexLabel: "C++" },
+				{  y: 1.78, indexLabel: "Python" },
+				{  y: 0.84,  indexLabel: "HTML"},
+				{  y: 0.74, indexLabel: "JavaScript" },
+				{  y: 2.06,  indexLabel: "CSS"}
+
+				]
+			}
+			]
+		});
+
+		chart.render();
+	}
+	</script>
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        </head>
+	<body>
+        <div>
+		<div id="chartContainer" style="height: 300px; width: 100%; canvasjs-chart-credit:
+   display: none;">
+        </div>
+        
+	</body>
+</html>
