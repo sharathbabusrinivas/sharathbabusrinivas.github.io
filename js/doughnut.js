@@ -1,45 +1,45 @@
 $(document).ready(function(){
     var ctx = $("#lang").get(0).getContext("2d");
-
+//programming languages
     var data = [
 
         {
-            value: 270,
-            color: "cornflowerblue",
-            highlight: "lightskyblue",
+            value: 100,
+            color: "grey",
+            highlight: "yellowgreen",
             label: "Java"
         },
         {
-            value: 270,
-            color: "cornflowerblue",
-            highlight: "lightskyblue",
+            value: 80,
+            color: "grey",
+            highlight: "yellowgreen",
             label: "C++"
         },
 
 
         {
-            value: 270,
-            color: "cornflowerblue",
-            highlight: "lightskyblue",
+            value: 70,
+            color: "grey",
+            highlight: "yellowgreen",
             label: "JavaScript"
         },
         {
-            value: 50,
-            color: "lightgreen",
+            value: 100,
+            color: "grey",
             highlight: "yellowgreen",
             label: "HTML"
         },
         {
-            value: 40,
-            color: "orange",
-            highlight: "darkorange",
+            value: 70,
+            color: "grey",
+            highlight: "yellowgreen",
             label: "CSS"
         },
         {
             value: 50,
-            color: "lightgreen",
+            color: "grey",
             highlight: "yellowgreen",
-            label: "HTML"
+            label: "Python"
         },
     ];
 
@@ -48,46 +48,46 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     var ctx = $("#ide").get(0).getContext("2d");
-
+//IDE
     var data = [
 
         {
-            value: 270,
-            color: "cornflowerblue",
-            highlight: "lightskyblue",
-            label: "Java"
-        },
-        {
-            value: 270,
-            color: "cornflowerblue",
-            highlight: "lightskyblue",
-            label: "C++"
-        },
-
-
-        {
-            value: 270,
-            color: "cornflowerblue",
-            highlight: "lightskyblue",
-            label: "JavaScript"
-        },
-        {
-            value: 50,
-            color: "lightgreen",
+            value: 30,
+            color: "grey",
             highlight: "yellowgreen",
-            label: "HTML"
+            label: "Eclipse"
         },
         {
             value: 40,
-            color: "orange",
-            highlight: "darkorange",
-            label: "CSS"
+            color: "grey",
+            highlight: "yellowgreen",
+            label: "IntelliJ"
+        },
+
+
+        {
+            value: 30,
+            color: "grey",
+            highlight: "yellowgreen",
+            label: "Visual Studio"
         },
         {
             value: 50,
-            color: "lightgreen",
+            color: "grey",
             highlight: "yellowgreen",
-            label: "HTML"
+            label: "Android Studio"
+        },
+        {
+            value: 40,
+            color: "grey",
+            highlight: "yellowgreen",
+            label: "VMWare VSphere"
+        },
+        {
+            value: 50,
+            color: "grey",
+            highlight: "yellowgreen",
+            label: "Axure"
         },
     ];
 
@@ -96,41 +96,31 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     var ctx = $("#os").get(0).getContext("2d");
-
+//
     var data = [
 
         {
             value: 270,
-            color: "cornflowerblue",
-            highlight: "lightskyblue",
-            label: "Windows"
-        },
-        {
-            value: 150,
-            color: "cornflowerblue",
-            highlight: "lightskyblue",
-            label: "Android"
-        },
-
-
-        {
-            value: 200,
-            color: "cornflowerblue",
-            highlight: "lightskyblue",
-            label: "Linux"
-        },
-        {
-            value: 200,
-            color: "lightgreen",
+            color: "grey",
             highlight: "yellowgreen",
-            label: "Unix"
+            label: "MY SQL"
         },
         {
             value: 150,
-            color: "orange",
-            highlight: "darkorange",
-            label: "JNachos"
+            color: "grey",
+            highlight: "yellowgreen",
+            label: "MS ACCESS"
         },
+
+
+        {
+            value: 200,
+            color: "grey",
+            highlight: "yellowgreen",
+            label: "Mongo DB"
+        },
+        
+        
         
     ];
 
@@ -138,47 +128,43 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    var ctx = $("#db").get(0).getContext("2d");
-
+    //var ctx = $("#db").get(0).getContext("2d");
+    var ctx =$("#db").get(0).getContext("2d");
     var data = [
 
         {
-            value: 270,
-            color: "cornflowerblue",
-            highlight: "lightskyblue",
-            label: "Java"
+
+            value: 100,
+            color: "grey",
+            highlight: "yellowgreen",
+            label: "Windows"
         },
         {
-            value: 270,
-            color: "cornflowerblue",
-            highlight: "lightskyblue",
-            label: "C++"
+            value: 80,
+            color: "grey",
+            highlight: "yellowgreen",
+            label: "Linux"
         },
 
 
         {
-            value: 270,
-            color: "cornflowerblue",
-            highlight: "lightskyblue",
-            label: "JavaScript"
+            value: 80,
+            color: "grey",
+            highlight: "yellowgreen",
+            label: "Android"
         },
         {
             value: 50,
-            color: "lightgreen",
+            color: "grey",
             highlight: "yellowgreen",
-            label: "HTML"
+            label: "JNachos"
         },
+        
         {
-            value: 40,
-            color: "orange",
-            highlight: "darkorange",
-            label: "CSS"
-        },
-        {
-            value: 50,
-            color: "lightgreen",
+            value: 80,
+            color: "grey",
             highlight: "yellowgreen",
-            label: "HTML"
+            label: "Unix"
         },
     ];
 
