@@ -1,0 +1,1071 @@
+﻿<!DOCTYPE html>
+<html>
+  <title>IRS FORM 2017</title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <link href="irsstyle.css" type="text/css" rel="stylesheet" />
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="progressbarcontainer">
+      <ul id="progressbar">
+        <li class="active">PART I</li>
+        <li id="p1">PART II</li>
+        <li>PART III</li>
+      </ul>
+    </div>
+    <form id="msform" onsubmit="return validateForm()">
+      <!-- progressbar -->
+      <!-- fieldsets -->
+      <fieldset class ="row-no-padding1" style="background-color:#D5D5D5">
+        <div class="row col1 row-no-padding">
+          <div class="col-md-6 colone row-no-padding">
+            <div class="col-md-12 borderbelow3" style="padding-top:10px; margin-top:25.5px;">
+              <div class="textpad">
+                <h5 class="heading"><strong>Schedule K-1</strong></h5>
+                <h6>(Form 1065)</h6>
+              </div>
+            </div>
+            <section class="borderbelow">
+              <div class="col-md-12 ">
+                <label for="partner_number">Partner’s identifying number</label>
+                <span class="error">This field is required</span>
+              </div>
+              <div class="col-md-12">
+                <input class="form-control" type="text" value="" placeholder="Enter Number range 0-9" name="partner_number" id="partner_number">
+              </div>
+              <div class="col-md-12 col-md-offset-2">
+                <p><span>Partner’s name, address, city, state, and ZIP code</span></p>
+              </div>
+              <div class="col-md-12 ">
+                <textarea class="form-control" placeholder="Enter your address"  id="exampleTextarea" rows="3"></textarea>
+              </div>
+              <br>
+            </section>
+            <section class="borderbelow">
+              <div class="col-md-12">
+                <label class="radiocontainer">General partner or LLC member-manager
+                <input type="radio" name="partner1" checked="checked" />
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="col-md-12">
+                <label class="radiocontainer">Limited partner or other LLC member
+                <input type="radio" name="partner1" checked="checked"/>
+                <span class="checkmark"></span></label>
+              </div>
+              <div class="custom-offset">
+              </div>
+            </section>
+            <section class="borderbelow">
+              <div class="col-md-12">
+                <label class="radiocontainer">Domestic partner
+                <input type="radio" name="partner2" checked="checked" />
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="col-md-12">
+                <label class="radiocontainer">Foreign partner
+                <input type="radio" name="partner2" checked="checked" />
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="custom-offset"></div>
+            </section>
+            <section class="borderbelow">
+              <div class="spacediv">
+                <div class="col-md-12">
+                  <span>What type of entity is this partner?</span>
+                </div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="col-md-12">
+                <label class="chkboxcontainer" style="margin-top:15px;">
+                <input type="checkbox" value=""><span>If this partner is a retirement plan (IRA/SEP/Keogh/etc)check here</span>
+                <span class="checkmarkchkbox"></span>
+                </label>
+              </div>
+              <br>
+              <br>
+              <br>
+            </section>
+          </div>
+          <!--column one ended-->
+          <div class="col-md-6 coltwo row-no-padding1 " >
+            <div class="col-md-12 " style="padding-top:10px; margin-top:07px;">
+              <div class="row borderbelow ">
+                <div class="col-md-9 ">
+                  <h5><strong>Partner’s Share of Income, Deductions, Credits, etc.</strong></h5>
+                  <h6> Part II: Information About the Partner</h6>
+                </div>
+                <div class="col-sm-3 datepadding row-no-padding " style="display: inline-block;height:100%;">
+                  <div class="row " style="padding:10px;">
+                    <div class="col-sm-1 headingborder" >
+                      <h3>20</h3>
+                    </div>
+                    <div class="col-sm-2">
+                      <h3><strong>
+                        17
+                        </strong>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12" style="padding:7px;">
+              <div class="textpad">Partner’s share of profit, loss, and capital <i class="fa fa-question-circle" style="font-size:15px; background-color:back;color:#D5D5D5"></i></div>
+            </div>
+            <div class="textpad">
+              <div class="box">
+                <div class="col-md-12">
+                  <div class="row">
+                    <label class="col-md-2"></label>
+                    <div class="col-md-5">
+                      <div style="text-align:center">
+                        <label>Begining</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div style="text-align:center">
+                        <label >Ending</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--heading-->
+                <div class="col-md-12 one boxtwo ">
+                  <div class="row">
+                    <label class="col-md-2">Profit</label>
+                    <div class="col-md-5">
+                      <div class="input-group">
+                        <input type="text" placeholder="Enter Number range 0-9" class="form-control"/>
+                        <span class="input-group-addon"><strong>&percnt;</strong></span> 
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="input-group">
+                        <input type="text" placeholder="Enter Number range 0-9" class="form-control"/>
+                        <span class="input-group-addon"><strong>&percnt;</strong></span> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 one boxtwo">
+                  <div class="row">
+                    <label class="col-sm-2">Loss</label>
+                    <div class="col-sm-5">
+                      <div class="input-group">
+                        <input type="text" placeholder="Enter Number range 0-9" class="form-control"/>
+                        <span class="input-group-addon"><strong>&percnt;</strong></span> 
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="input-group">
+                        <input type="text" placeholder="Enter Number range 0-9" class="form-control"/>
+                        <span class="input-group-addon"><strong>&percnt;</strong></span> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 one  boxtwo">
+                  <div class="row">
+                    <label class="col-sm-2">Capital</label>
+                    <div class="col-sm-5">
+                      <div class="input-group">
+                        <input type="text" placeholder="Enter Number range 0-9" class="form-control"/>
+                        <span class="input-group-addon"><strong>&percnt;</strong></span> 
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="input-group">
+                        <input type="text" placeholder="Enter Number range 0-9" class="form-control"/>
+                        <span class="input-group-addon"><strong>&percnt;</strong></span>    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of box-->
+            <div class="textpad">
+              <div class="row below1">
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Partner’s share of liabilities at year end:
+                  </span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo ">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text" placeholder="Enter Number range 0-9" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Qualified nonrecourse financing</span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text"  placeholder="Enter Number range 0-9" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Recourse</span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text" placeholder="Enter Number range 0-9" class="form-control"/>
+                  </div>
+                </div>
+              </div>
+              <div class="row below1">
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Partner’s capital account</span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text" placeholder="Enter Number range 0-9" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Capital contributed during the year</span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text" placeholder="Enter Number range 0-9" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Current year increase (decrease)</span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text" placeholder="Enter Number range 0-9" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Withdrawals & distributions</span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text"  placeholder="Enter Number range 0-9" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Ending capital account </span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text" placeholder="Enter Number range 0-9" class="form-control"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="textpad">
+              <div class="row">
+                <div class="col-md-3">
+                  <label class="chkboxcontainer" style="margin-top:15px;">
+                  <input type="checkbox" checked value="">Tax Basics
+                  <span class="checkmarkchkbox"></span>
+                  </label>
+                </div>
+                <div class="col-md-3">
+                  <label class="chkboxcontainer" style="margin-top:15px;">
+                  <input type="checkbox" value="">GAAP
+                  <span class="checkmarkchkbox"></span>
+                  </label>
+                </div>
+                <div class="col-md-4">
+                  <label class="chkboxcontainer" style="margin-top:15px;">
+                  <input type="checkbox" value="">Section 704(b) book
+                  <span class="checkmarkchkbox"></span>
+                  </label>
+                </div>
+                <div class="col-md-2">
+                  <label class="chkboxcontainer" style="margin-top:15px;">
+                  <input type="checkbox" value="">Other
+                  <span class="checkmarkchkbox"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="textpad">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Did the partner contribute property with a built-in gain or loss?</label>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <label class="chkboxcontainer">
+                      <input type="checkbox" value="">Yes
+                      <span class="checkmarkchkbox"></span>
+                      </label>
+                    </div>
+                    <div class="col-md-5">
+                      <label class="chkboxcontainer">
+                      <input type="checkbox" value="">No
+                      <span class="checkmarkchkbox"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="button" name="previous" id="prevbtn0" class="previous action-button centertag" disabled style="width:250px;background-color:#B0B0B0;" value="Previous" />
+        <input type="button" id="nextbtn0"  onclick="setColor('prevbtn1','nextbtn1','white')" name="next" class="next action-button centertag" style="width:250px;background-color:white;" value="Next" /> 
+        <input type="submit"  value="Submit" style="width:250px;background-color:white" class="centertag"></input>
+        <input type="reset"  value="Clear" style="width:250px;background-color:white" class="centertag"></input>
+      </fieldset>
+      <fieldset class ="row-no-padding1" style="background-color:#D5D5D5">
+        <div class="row col1 row-no-padding">
+          <div class="col-md-6 colone row-no-padding">
+            <div class="col-md-12 borderbelow3" style="padding-top:10px; margin-top:24.5px;">
+              <div class="textpad">
+                <h5 class="heading"><strong>Schedule K-1</strong></h5>
+                <h6>(Form 1065)</h6>
+              </div>
+            </div>
+            <section class="borderbelow">
+              <div class="col-md-12 ">
+                <p><span>Partner’s identifying number</span></p>
+              </div>
+              <div class="col-md-12">
+                <input class="form-control" type="text" value="" id="">
+              </div>
+              <div class="col-md-12 col-md-offset-2">
+                <p><span>Partner’s name, address, city, state, and ZIP code</span></p>
+              </div>
+              <div class="col-md-12 ">
+                <textarea class="form-control"  id="exampleTextarea" rows="3"></textarea>
+              </div>
+              <br>
+            </section>
+            <section class="borderbelow">
+              <div class="col-md-12">
+                <label class="radiocontainer">General partner or LLC member-manager
+                <input type="radio" name="partpartner1" checked="checked" />
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="col-md-12">
+                <label class="radiocontainer">Limited partner or other LLC member
+                <input type="radio" name="partpartner1" checked="checked"/>
+                <span class="checkmark"></span></label>
+              </div>
+              <div class="custom-offset">
+              </div>
+            </section>
+            <section class="borderbelow">
+              <div class="col-md-12">
+                <label class="radiocontainer">Domestic partner
+                <input type="radio" name="partner2" checked="checked" />
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="col-md-12">
+                <label class="radiocontainer">Foreign partner
+                <input type="radio" name="partner2" checked="checked" />
+                <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="custom-offset"></div>
+            </section>
+            <section class="borderbelow">
+              <div class="spacediv">
+                <div class="col-md-12">
+                  <span>What type of entity is this partner?</span>
+                </div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="col-md-12">
+                <label class="chkboxcontainer" style="margin-top:15px;">
+                <input type="checkbox" value=""><span>If this partner is a retirement plan (IRA/SEP/Keogh/etc)check here</span>
+                <span class="checkmarkchkbox"></span>
+                </label>
+              </div>
+              <br>
+              <br>
+              <br>
+            </section>
+          </div>
+          <!--column one ended-->
+          <div class="col-md-6 coltwo row-no-padding1 " >
+            <div class="col-md-12 " style="padding-top:10px; margin-top:07px;">
+              <div class="row borderbelow ">
+                <div class="col-md-9 ">
+                  <h5><strong>Partner’s Share of Income, Deductions, Credits, etc.</strong></h5>
+                  <h6> Part II: Information About the Partner</h6>
+                </div>
+                <div class="col-sm-3 datepadding row-no-padding " style="display: inline-block;height:100%;">
+                  <div class="row " style="padding:10px;">
+                    <div class="col-sm-1 headingborder" >
+                      <h3>20</h3>
+                    </div>
+                    <div class="col-sm-2">
+                      <h3><strong>
+                        17
+                        </strong>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12" style="padding:11px;">
+              <div class="textpad">Partner’s share of profit, loss, and capital</div>
+            </div>
+            <div class="textpad">
+              <div class="box">
+                <div class="col-md-12">
+                  <div class="row">
+                    <label class="col-md-2"></label>
+                    <div class="col-md-5">
+                      <div style="text-align:center">
+                        <label>Begining</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div style="text-align:center">
+                        <label >Ending</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--heading-->
+                <div class="col-md-12 one boxtwo ">
+                  <div class="row">
+                    <label class="col-md-2">Profit</label>
+                    <div class="col-md-5">
+                      <div class="input-group">
+                        <input type="text"  class="form-control"/>
+                        <span class="input-group-addon"><strong>&percnt;</strong></span> 
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="input-group">
+                        <input type="text"  class="form-control"/>
+                        <span class="input-group-addon"><strong>&percnt;</strong></span> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 one boxtwo">
+                  <div class="row">
+                    <label class="col-sm-2">Loss</label>
+                    <div class="col-sm-5">
+                      <div class="input-group">
+                        <input type="text" class="form-control"/>
+                        <span class="input-group-addon"><strong>&percnt;</strong></span> 
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="input-group">
+                        <input type="text" class="form-control"/>
+                        <span class="input-group-addon"><strong>&percnt;</strong></span> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 one  boxtwo">
+                  <div class="row">
+                    <label class="col-sm-2">Capital</label>
+                    <div class="col-sm-5">
+                      <div class="input-group">
+                        <input type="text" class="form-control"/>
+                        <span class="input-group-addon"><strong>&percnt;</strong></span> 
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="input-group">
+                        <input type="text" class="form-control"/>
+                        <span class="input-group-addon"><strong>&percnt;</strong></span>    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of box-->
+            <div class="textpad">
+              <div class="row below1">
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Partner’s share of liabilities at year end:
+                  </span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo ">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Qualified nonrecourse financing</span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Recourse</span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+              </div>
+              <div class="row below1">
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Partner’s capital account</span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Capital contributed during the year</span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Current year increase (decrease)</span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Withdrawals & distributions</span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+                <div class="col-md-6 leftlabel boxtwo">
+                  <label><span>Ending capital account </span></label>
+                </div>
+                <div class="col-md-6 rightlabel boxtwo">
+                  <div class="input-group">
+                    <span class="input-group-addon"><strong>$</strong></span>
+                    <input type="text" class="form-control"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="textpad">
+              <div class="row">
+                <div class="col-md-3">
+                  <label class="chkboxcontainer" style="margin-top:15px;">
+                  <input type="checkbox" value="">Tax Basics
+                  <span class="checkmarkchkbox"></span>
+                  </label>
+                </div>
+                <div class="col-md-3">
+                  <label class="chkboxcontainer" style="margin-top:15px;">
+                  <input type="checkbox" value="">GAAP
+                  <span class="checkmarkchkbox"></span>
+                  </label>
+                </div>
+                <div class="col-md-4">
+                  <label class="chkboxcontainer" style="margin-top:15px;">
+                  <input type="checkbox" value="">Section 704(b) book
+                  <span class="checkmarkchkbox"></span>
+                  </label>
+                </div>
+                <div class="col-md-2">
+                  <label class="chkboxcontainer" style="margin-top:15px;">
+                  <input type="checkbox" value="">Other
+                  <span class="checkmarkchkbox"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="textpad">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Did the partner contribute property with a built-in gain or loss?</label>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <label class="chkboxcontainer">
+                      <input type="checkbox" value="">Yes
+                      <span class="checkmarkchkbox"></span>
+                      </label>
+                    </div>
+                    <div class="col-md-5">
+                      <label class="chkboxcontainer">
+                      <input type="checkbox" value="">No
+                      <span class="checkmarkchkbox"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="button" name="previous" id="prevbtn1" class="previous action-button centertag disabled" style="width:250px;" value="Previous" />
+        <input type="button" id="nextbtn1"  onclick="setColor('prevbtn2','nextbtn1','white')" name="next" class="next action-button centertag" style="width:250px" value="Next" /> 
+        <input type="submit"  value="Submit" style="width:250px;background-color:white" class="centertag"></input>
+        <input type="reset"  value="Clear" style="width:250px;background-color:white" class="centertag"></input>
+      </fieldset>
+      <fieldset class ="row-no-padding1" style="background-color:#D5D5D5">
+        <div class="row col1 row-no-padding">
+          <div class="col-md-6 colone row-no-padding">
+            <div class="col-md-12 borderbelow3" style="padding-top:10px; margin-top:24.5px;">
+              <div class="textpad">
+                <h5 class="heading"><strong>Part III</strong></h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong><label>1</label></strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12">  <label> Ordinary Business Income (loss) </label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <div class="col-md-12">  <strong><label>2</label></strong></div>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12"> <label> Net rental real estate income (loss) </label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong><label>3</label></strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12"> <label> Other net rental income (loss)</label> </div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong><label>4</label></strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12"> <label>Guaranteed payments</label> </div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong><label>5</label></strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12"> <label>Interest income </label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong><label>6a</label></strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12">    <label>Ordinary dividends </label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong><label>6b</label></strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12"><label> Qualified dividends  </label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong><label>7</label></strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12"><label> Royalties</label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong><label>8</label></strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12"><label> Net short-term capital gain (loss) </label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong><label>9a</label></strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12"> <label> Net long-term capital gain (loss) </label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong><label>9b</label></strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12"> <label> Collectibles (28%) gain (loss)</label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong><label>9c</label></strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12"> <label>Unrecaptured section 1250 gain</label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--column one ended-->
+          <div class="col-md-6 coltwo row-no-padding1 " >
+            <div class="col-md-12 borderbelow3" style="padding-top:10px; margin-top:2.5px;">
+              <div class="textpad">
+                <h5><strong>Partner’s Share of Current Year Income,Deductions,<br>
+                  Credits, and Other Items </strong>
+                </h5>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong>
+                <label>
+                10
+                </label>
+                </strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12">  <label>Net section 1231 gain (loss)</label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong>
+                <label>
+                11
+                </label>
+                </strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12"> <label>Other income(loss)</label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong>
+                <label>
+                12
+                </label>
+                </strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12"> <label> Section 179 deduction </label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong>
+                <label>
+                13
+                </label>
+                </strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12"> <label>Other deductions </label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong>
+                <label>
+                14
+                </label>
+                </strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12"><label>Self-employment earnings (loss) </label> </div>
+                <div class="col-md-12"> 
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong>
+                <label>
+                15
+                </label>
+                </strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12">  <label>Credits </label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong>
+                <label>
+                16
+                </label>
+                </strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12">  <label> Foreign transactions</label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong>
+                <label>
+                17
+                </label>
+                </strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12">
+                  <label>Alternative minimum tax (AMT) items</label>
+                </div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong>
+                <label>
+                18
+                </label>
+                </strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12">
+                  <label>Tax-exempt income and  nondeductible expenses </label>
+                </div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong>
+                <label>
+                19
+                </label>
+                </strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12">  <label>Distributions </label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+              <div class="col-md-2 smalldiv" style="text-align: center" >
+                <strong>
+                <label>
+                20
+                </label>
+                </strong>
+              </div>
+              <div class="col-md-10 smalldivbelowborder">
+                <div class="col-md-12">  <label> Other information</label></div>
+                <div class="col-md-12">
+                  <input class="form-control" type="text" value="" id="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="button" name="previous" id="prevbtn2" class="previous action-button centertag" style="width:250px;" value="Previous" />
+        <input type="button" id="nextbtn2"  disabled name="next" class="next action-button centertag" style="width:250px;background-color:#B0B0B0" value="Next" /> 
+        <input type="submit"  value="Submit" style="width:250px;background-color:white" class="centertag"></input>
+        <input type="reset"  value="Clear" style="width:250px;background-color:white" class="centertag"></input>
+      </fieldset>
+      <div class="col-md-12">
+      </div>
+      <script>
+        var count = 1;
+        function setColor(prevbtn,nextbtn, color) {
+        var prevproperty = document.getElementById(prevbtn);
+        var nextproperty = document.getElementById(nextbtn);
+        
+        if (count == 0) {
+        prevproperty.style.backgroundColor = "#FFFFFF"
+        nextproperty.style.backgroundColor = "#FFFFFF"
+        count = 1;        
+        }
+        else {
+        prevproperty.style.backgroundColor = "#FFFFFF"
+        nextproperty.style.backgroundColor="#FFFFFF"
+        count = 0;
+        }
+        }
+        function validateForm() {
+        var x = document.forms["msform"]["partner_number"].value;
+        if (x == "") {
+        alert("Number must be filled out");
+        return false;
+        }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        var current_fs, next_fs, prev_fs; //fieldsets
+        var left, opacity, scale; //fieldset properties which we will animate
+        var animating;
+        
+        $(".next").click(function() {
+            
+            if (animating) return false;
+            animating = true;
+        
+            current_fs = $(this).parent();
+            next_fs = $(this).parent().next();
+        
+            //activate next step on progressbar using the index of next_fs
+            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+        
+            //show the next fieldset
+            next_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function(now, mx) {
+                    
+                    //1. scale current_fs down to 80%
+                    scale = 1 - (1 - now) * 0.2;
+                    //2. bring next_fs from the right(50%)
+                    left = (now * 50) + "%";
+                    //3. increase opacity of next_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'transform': 'scale(' + scale + ')',
+                        'position': 'absolute'
+                    });
+                    next_fs.css({
+                        'left': left,
+                        'opacity': opacity
+                    });
+                },
+                duration: 800,
+                complete: function() {
+                    current_fs.hide();
+                    animating = false;
+                },
+                
+                easing: 'easeInOutBack'
+            });
+        });
+        
+        $(".previous").click(function() {
+            if (animating) return false;
+            animating = true;
+        
+            current_fs = $(this).parent();
+            prev_fs = $(this).parent().prev();
+        
+            //de-activate current step on progressbar
+            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+        
+            //show the previous fieldset
+            prev_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({
+                opacity: 0
+            }, {
+                step: function(now, mx) {
+                   
+                    //1. scale prev_fs from 80% to 100%
+                    scale = 0.8 + (1 - now) * 0.2;
+                    //2. take current_fs to the right(50%) - from 0%
+                    left = ((1 - now) * 50) + "%";
+                    //3. increase opacity of prev_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'left': left
+                    });
+                    prev_fs.css({
+                        'transform': 'scale(' + scale + ')',
+                        'opacity': opacity
+                    });
+                },
+                duration: 800,
+                complete: function() {
+                    current_fs.hide();
+                    animating = false;
+                },
+                
+                easing: 'easeInOutBack'
+            });
+        });
+        
+        $(".submit").click(function() {
+            return false;
+        })
+        
+        
+        $(document).ready(function(){
+        $(".one").hover(function(){
+        $(this).css("background-color", "#D5D5D5");
+        }, function(){
+        $(this).css("background-color", "white");
+        });
+        });
+      </script>
+    </form>
+  </body>
+</html>

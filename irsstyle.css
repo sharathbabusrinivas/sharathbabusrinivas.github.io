@@ -1,0 +1,515 @@
+@media screen and (min-width: 480px) {
+    
+    .col1{width:200px;float:left;}
+    
+}
+
+        /*basic reset*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .div-table {
+            display: table;         
+            width: auto;         
+            
+            border: 1px solid #666666;         
+            border-spacing: 5px; 
+          }
+          .div-table-row {
+            display: table-row;
+            width: auto;
+            clear: both;
+            padding-left:12px;
+          }
+          .div-table-col {
+            float: left; 
+            display: table-column;         
+            width: 200px;   
+              
+           
+          }
+          .dollar::after {
+                      content: "%";
+                      padding: 0 0px;
+                      
+                  }
+        .dollarsign::before{
+
+            content:"$";
+            float:left;
+            padding-right: 1px;
+            
+            
+        }
+        
+
+        body {
+            font-family: roboto;
+            background-color: #D5D5D5
+        }
+        /*form styles*/
+       
+        .boxform{
+            border: 2px solid black;
+            
+        }
+        .moveright{
+            width:20px;
+        }
+        .boxtwo{
+            margin-top:5px;
+            
+            padding: 3.2px;
+            padding-left:5px;
+        }
+        .box{
+            border: 2px solid black;
+            margin-bottom: 5 px;
+        }
+        .percentclass:after{
+            content: '\003e';
+        }
+        .leftlabel{
+            float: left;
+            margin-top:10px;
+        }
+        .rightlabel{
+            float: right;
+        }
+        .borderbelow{
+            border-bottom:2px solid #D5D5D5;
+            padding:5px;
+        }
+        .below1{
+            padding:10px;
+            border-bottom:2px solid #D5D5D5;
+        }
+        .borderbelow1{
+            border-bottom:2px solid #D5D5D5;
+            padding:5px;
+        }
+        
+        .borderbelow2{
+            border-bottom:2px solid #D5D5D5;
+            padding:3px;
+        }
+        .borderbelow3{
+            border-bottom:2px solid #D5D5D5;
+            padding:5px;
+        }
+        .textpad{
+
+            padding-left:15px;
+        }
+        .textpad1{
+
+            padding-left:25px;
+        }
+        .spacediv{
+            padding-top:10px;
+            padding-bottom: 10px;
+        }
+        .row-no-padding > [class*="col-"] {
+           
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        } 
+        .row-no-padding1 > [class*="col-"] {
+           
+            
+            padding-right: 0 !important;
+        }       
+        .col1 {
+            border-color: 2px solid #D5D5D5;
+            background-color: white;
+            margin-right:0px;
+            margin-left:0px;
+            position: relative;
+            width:100%;
+            }
+            /*changed here*/
+            .colone{
+            border-right: 2px solid #D5D5D5;
+            border-bottom: 2px solid #D5D5D5;
+            float: left;
+            padding-left: 1px;
+            
+            position: relative;
+            }
+            .coltwo{
+                
+                border-bottom: 2px solid #D5D5D5;
+                padding-left:20px;
+            position: relative;
+            
+            }
+            .bgcolor{
+                background-color: #D5D5D5;
+            }
+            .table1 { display: table; }
+            .row1 { display: table-row; }
+            .cell1 { display: table-cell; }
+            #msform fieldset {
+                background: white;
+                border: 0 none;
+                border-style: #D5D5D5;
+                border-radius: 3px;
+                padding-left: 10px;
+                padding-right: 20px;
+               width:90%;
+               
+                
+               
+                margin: 0 5%;
+                /*stacking fieldsets above each other*/
+                position: relative;
+            }
+                /*Hide all except first fieldset*/
+                #msform fieldset:not(:first-of-type) {
+                    display: none;
+                }
+                .progressbarcontainer{
+                    max-width: 900px;
+                    margin: 50px auto;
+                    text-align: center;
+                    position: relative;
+                }
+        /*progressbar*/
+        #progressbar {
+            margin-bottom: 30px;
+            overflow: hidden;
+            /*CSS counters to number the steps*/
+            counter-reset: step;
+        }
+
+
+
+        .cicle{
+            
+  
+        }
+            #progressbar li {
+                list-style-type: none;
+                color: black;
+                text-transform: uppercase;
+                font-size: 9px;
+                width: 33.33%;
+                float: left;
+                position: relative;
+            }
+
+                #progressbar li:before {
+                    content: counter(step);
+                    counter-increment: step;
+                    width: 20px;
+                    line-height: 20px;
+                    display: block;
+                    font-size: 10px;
+                    color: #333;
+                    background: lightskyblue;
+                    border-radius: 50%;
+                    margin: 0 auto 5px auto;
+                }
+                /*progressbar connectors*/
+                #progressbar li:after {
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    background: white;
+                    position: absolute;
+                    left: -50%;
+                    top: 9px;
+                    z-index: -1; /*put it behind the numbers*/
+                }
+
+                #progressbar li:first-child:after {
+                    /*connector not needed before the first step*/
+                    content: none;
+                }
+                /*marking active/completed steps orange The number of the step and the connector before it becomes orange*/
+                #progressbar li.active::before  {
+                    background-color:darkorange;
+                    color: white;
+                    border: 3px solid #FFF;
+                   
+  
+                }
+                #progress li.active:after{
+                    background-color: black;
+                }
+
+                .radiocontainer {
+                    display: block;
+                    position: relative;
+                    padding-left: 35px;
+                    margin-bottom: 12px;
+                    cursor: pointer;
+                    
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                }
+                
+                /* Hide the browser's default radio button */
+                .radiocontainer input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+                
+                /* Create a custom radio button */
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 18px;
+                    width: 18px;
+                    background-color: #eee;
+                    border-radius: 50%;
+                }
+                
+                /* On mouse-over, add a grey background color */
+                .radiocontainer:hover input ~ .checkmark {
+                    background-color: #ccc;
+                }
+                
+                /* When the radio button is checked, add a blue background */
+                .radiocontainer input:checked ~ .checkmark {
+                    background-color: #2196F3;
+                }
+                
+                /* Create the indicator (the dot/circle - hidden when not checked) */
+                .checkmark:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                }
+                
+                /* Show the indicator (dot/circle) when checked */
+                .radiocontainer input:checked ~ .checkmark:after {
+                    display: block;
+                }
+                
+                /* Style the indicator (dot/circle) */
+                .radiocontainer .checkmark:after {
+                     top: 3px;
+                    left: 3px;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background: white;
+                }
+                .chkboxcontainer {
+
+                    display: block;
+
+                    position: relative;
+
+                    padding-left: 35px;
+
+                    margin-bottom: 12px;
+
+                    cursor: pointer;
+
+                   
+
+                    -webkit-user-select: none;
+
+                    -moz-user-select: none;
+
+                    -ms-user-select: none;
+
+                    user-select: none;
+
+                }
+
+               
+
+                /* Hide the browser's default radio button */
+
+                .chkboxcontainer input {
+
+                    position: absolute;
+
+                    opacity: 0;
+
+                    cursor: pointer;
+
+                }
+
+               
+
+                /* Create a custom radio button */
+
+                .checkmarkchkbox {
+
+                    position: absolute;
+
+                    top: 0;
+
+                    left: 0;
+
+                    height: 18px;
+
+                    width: 18px;
+
+                    background-color: #eee;
+
+                    
+
+                }
+
+               
+
+                /* On mouse-over, add a grey background color */
+
+                .chkboxcontainer:hover input ~ .checkmarkchkbox {
+
+                    background-color: #ccc;
+
+                }
+
+               
+
+                /* When the radio button is checked, add a blue background */
+
+                .chkboxcontainer input:checked ~ .checkmarkchkbox {
+
+                    background-color: #2196F3;
+
+                }
+
+               
+
+                /* Create the indicator (the dot/circle - hidden when not checked) */
+
+                .checkmarkchkbox:after {
+
+                    content: "";
+
+                    position: absolute;
+
+                    display: none;
+
+                }
+
+               
+
+                /* Show the indicator (dot/circle) when checked */
+
+                .chkboxcontainer input:checked ~ .checkmarkchkbox:after {
+
+                    display: block;
+
+                }
+
+               
+
+                /* Style the indicator (dot/circle) */
+
+                .chkboxcontainer .checkmarkchkbox:after {
+
+                     top: 3px;
+
+                    left: 3px;
+
+                    width: 12px;
+
+                    height: 12px;
+                    background: white;
+
+                }
+
+ 
+                
+                .checkboxFive label {
+                    cursor: pointer;
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    top: 0;
+                      left: 0;
+                    background: #eee;
+                    border:1px solid #ddd;
+                }
+                .checkboxFive label:after {
+                    opacity: 0.2;
+                    content: '';
+                    position: absolute;
+                    width: 9px;
+                    height: 5px;
+                    background: transparent;
+                    top: 5px;
+                    left: 2px;
+                    border: 3px solid #333;
+                    border-top: none;
+                    border-right: none;
+                
+                    transform: rotate(-45deg);
+                }
+                .checkboxFive label:hover::after {
+                    opacity: 0.0;
+                }
+                
+                /**
+                 * Create the checkbox state for the tick
+                 */
+                 .checkboxFive input[type=checkbox]:checked + label:after {
+                    opacity: 1;
+                }
+                  .input-group-addon
+{
+    background-color:#FFF;
+    padding-left:1px;
+}
+.input-group .input-group-addon 
+{
+   border :none;
+   
+}
+.centertag{
+    align-self: center;
+    background-color:lightcyan;
+    margin-left:70px;
+    
+    padding:7px;
+}
+.headingborder {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+}
+.datepadding{
+    padding:5px;
+    
+    border-left: 2px solid #D5D5D5;
+}
+
+.smalldiv{
+    border-right: 2px solid #D5D5D5;
+    border-bottom:2px solid #D5D5D5;
+    
+}
+.smalldivbelowborder{
+    border-bottom:2px solid #D5D5D5;
+    padding-bottom: 5px;
+    right:10px;
+    
+}
+input.invalid, textarea.invalid{
+	border: 2px solid red;
+}
+input.valid, textarea.valid{
+	border: 2px solid green;
+}
+.error{
+	display: none;
+	margin-left: 10px;
+}		
+
+.error_show{
+	color: red;
+	margin-left: 10px;
+}
